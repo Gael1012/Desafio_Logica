@@ -1,4 +1,4 @@
-let vitoria = 68
+let vitoria = 115
 let derrotas = 24
 let nivel = "não ranqueado"
 
@@ -12,7 +12,7 @@ let saldo = calcularSaldo(vitoria, derrotas)
 if (saldo < 10) {
     elo = "ferro"
 }
-else if (saldo >= 11 && saldo < 21) {
+else if (saldo >= 10 && saldo < 21) {
     elo = "bronze"
 }
 else if (saldo >= 21 && saldo < 51) {
@@ -30,10 +30,9 @@ else if (saldo >= 91 && saldo < 101) {
 else if (saldo >= 101) {
     elo = "imortal"
 }
-else;{
-    console.log("erro")
-}
+else;{}
 
 
 calcularSaldo(vitoria, derrotas)
-console.log("O herói tem saldo de " + saldo + "e esta no nivel " + elo) 
+
+console.log("O herói tem saldo de " + saldo + " e esta no nivel de " + elo)
