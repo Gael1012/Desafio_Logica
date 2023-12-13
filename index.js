@@ -3,7 +3,7 @@ let nomeHeroi = "Arcanjo"
 let exp = 10500;
 
 if (exp < 1000){
-    let elo = "ferro"
+    elo = "ferro"
     //console.log("Seu elo é: " + elo)
     } 
 
