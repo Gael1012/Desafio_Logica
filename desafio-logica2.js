@@ -1,12 +1,25 @@
-let vitoria = 115
+let vitoria = 150
 let derrotas = 24
 let nivel = "não ranqueado"
+let contador = 0
 
 function calcularSaldo(vitoria, derrotas) {
     let saldo = vitoria - derrotas
     return saldo
 }
-
+function sorteioDeNivel(vitoria) {
+    while (contador < 5) {
+        contador++
+        Math.random()
+        if (Math.random() < 0.5) {
+            vitoria += 4
+        } else {
+            vitoria -= 1
+        }
+    }
+    return vitoria
+}
+sorteioDeNivel(vitoria)
 let saldo = calcularSaldo(vitoria, derrotas)
 
 if (saldo < 10) {
@@ -30,9 +43,6 @@ else if (saldo >= 91 && saldo < 101) {
 else if (saldo >= 101) {
     elo = "imortal"
 }
-else;{}
 
-
-calcularSaldo(vitoria, derrotas)
 
 console.log("O herói tem saldo de " + saldo + " e esta no nivel de " + elo)
